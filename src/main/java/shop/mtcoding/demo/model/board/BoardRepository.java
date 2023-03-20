@@ -6,6 +6,7 @@ import org.apache.ibatis.annotations.Mapper;
 
 import shop.mtcoding.demo.dto.BoardDetailOutDto;
 import shop.mtcoding.demo.dto.BoardJoinUserDto;
+import shop.mtcoding.demo.dto.BoardJoinUserDto2;
 
 @Mapper
 public interface BoardRepository {
@@ -23,4 +24,6 @@ public interface BoardRepository {
     public BoardDetailOutDto findByIdJoinUser(int id);
 
     public BoardJoinUserDto findByIdJoinUser2(int id);
+
+    public BoardJoinUserDto2 findByIdJoinUser3(int id);
 }
